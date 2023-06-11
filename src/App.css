@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.character-container {
+  display: flex;
+  flex-direction: row;
+  height: 75%;
+  width: 90%;
+  border: none;
+  border-radius: 25px;
+}
+.character-count-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 50%;
+  background-color: #ffc533;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  overflow-y: auto;
+}
+.character-input-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 50%;
+  background-color: #0f172a;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #ffffff;
+}
+.character-count-container-heading-container {
+  margin: 10px;
+  background-color: #ffbf1f;
+}
+.character-count-container-heading {
+  font-family: Roboto;
+  font-size: 22px;
+  margin: 28px 22px;
+  color: #334155;
+
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .character-count-container-heading {
+    font-size: 28px;
+    width: 350px;
+  }
+}
+.input-container-heading {
+  font-family: Roboto;
+  font-size: 24px;
+  margin: 28px 22px;
+  color: #ffbf1f;
+  font-weight: 500;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .input-container-heading {
+    font-size: 26px;
+  }
+}
+.form-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+  margin: 20px auto;
+}
+.input {
+  flex-grow: 1;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  padding: 10px;
+  outline: none;
+}
+
+.button {
+  background-color: #ffc533;
+  color: #334155;
+  height: 40px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  padding: 6px 11px;
+}
+@media screen and (min-width: 768px) {
+  .input {
+    height: 50px;
+    font-size: 14px;
+  }
+  .button {
+    height: 50px;
+    padding: 7px 16px;
+  }
+}
+.character-list-container {
+  list-style: none;
+  padding: 0;
+}
+.list-element {
+  margin-left: 33px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 768px) {
+  .list-element {
+    font-size: 22px;
+  }
+}
